@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WorkoutApi.Controllers
@@ -13,12 +14,14 @@ namespace WorkoutApi.Controllers
         };
 
         [HttpGet]
+        [Authorize(Roles = "User,Admin")]
         public ActionResult<IEnumerable<Exercise>> GetAll()
         {
             return Ok(_exercises);
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "User,Admin")]
         public ActionResult<Exercise> GetById(int id)
         {
             var exercise = _exercises.FirstOrDefault(e => e.Id == id);
@@ -28,6 +31,7 @@ namespace WorkoutApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create([FromBody] Exercise newExercise)
         {
             if (newExercise == null) return BadRequest();
@@ -39,6 +43,7 @@ namespace WorkoutApi.Controllers
         }
 
         [HttpPatch("{id}")]
+        [Authorize(Roles = "Admin")]
         public ActionResult Patch(int id, [FromBody] Exercise updateInfo)
         {
             var exercise = _exercises.FirstOrDefault(e => e.Id == id);
@@ -52,6 +57,7 @@ namespace WorkoutApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
             var exercise = _exercises.FirstOrDefault(e => e.Id == id);
@@ -61,7 +67,6 @@ namespace WorkoutApi.Controllers
             return NoContent(); 
         }
     }
-
 
     public class Exercise
     {

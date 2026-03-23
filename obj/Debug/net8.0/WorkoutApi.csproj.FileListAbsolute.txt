@@ -31,3 +31,12 @@ E:\projects\WorkoutApi\obj\Debug\net8.0\refint\WorkoutApi.dll
 E:\projects\WorkoutApi\obj\Debug\net8.0\WorkoutApi.pdb
 E:\projects\WorkoutApi\obj\Debug\net8.0\WorkoutApi.genruntimeconfig.cache
 E:\projects\WorkoutApi\obj\Debug\net8.0\ref\WorkoutApi.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\projects\WorkoutApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\projects\WorkoutApi\obj\Debug\net8.0\WorkoutApi.sourcelink.json
