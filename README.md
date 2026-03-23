@@ -14,7 +14,7 @@
 
 &#x20;  ```bash
 
-&#x20;  git clone https://github.com/cah9gan/WorkoutTrackerAPI
+&#x20;  git clone https://github.com/cah9gan/WorkoutTrackerAPI.git
 
 2\. Перейдіть у папку проєкту:
 
